@@ -1,3 +1,4 @@
+# This is a bash script to check ssh services on hosts
 #!/bin/bash
 
 echo "=================================="
