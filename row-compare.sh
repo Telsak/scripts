@@ -23,6 +23,7 @@ else
     # original inventory file - thus preserving the order of items and allowing
     # us to simply paste the resulting file into the document
     grep $p $2
+    
     # if grep exits with code 1 - ie, no match found, echo result to file
     # if grep exits with code 0 - match found or successful command - echo "JA" to file
     if [ $? -ne 0 ]
