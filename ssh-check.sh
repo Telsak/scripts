@@ -9,6 +9,6 @@ while read p; do
 	then
 	  echo "No connection" | tee -a results.txt
   	else
-          echo "OK" | tee -a results.txt
-        fi	  
+      echo "OK" | tee -a results.txt
+    fi	  
 done < $1
