@@ -1,11 +1,11 @@
 # This is a bash script to check ssh services on hosts
 #!/bin/bash
-
 echo "=================================="
 rm results.txt
+
 while read p; do
-	nc -znv -w3 $p 22
-	if [ $? -ne 0 ]
+    nc -znv -w3 $p 22
+    if [ $? -ne 0 ]
 	then
 	  echo "No connection" | tee -a results.txt
   	else
