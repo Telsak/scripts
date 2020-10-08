@@ -16,9 +16,9 @@ while read p; do
     # for a long time on each ssh-check
     nc -znv -w3 $p 22
 
-    # the if checks the exit status (or program result which is a 'hidden'
-    # message returned by a program to the shell to indicate if the program
-    # ended sucessfully or not.
+    # the if statement checks the exit status (or program result which is a 
+    # 'hidden' message returned by a program to the shell to indicate if the 
+    # program ended sucessfully or not.
     # If the exit status equals 1, then we have no connection.
     # If the exit status equals 0, then we have a working connection.
     if [ $? -ne 0 ]
