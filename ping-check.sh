@@ -4,7 +4,7 @@ echo "=================================="
 rm ping_results.txt
 
 while read p; do
-    ping $p
+    ping -c 2 $p
     if [ $? -ne 0 ]
 	then
       dt=$(date '+%d/%m/%Y %H:%M:%S')
